@@ -18,8 +18,10 @@ echo "This takes some time,do not panic if the progress bar seemingly"
 echo "does not move, it will."
 echo "#################################################################"
 sudo apt-get -y update
-# Changing timezone to Bratislava
+# Changing timezone to Bratislava. To find another use $ timedatectl list-timezones
 sudo timedatectl set-timezone Europe/Bratislava
+#sudo timedatectl set-timezone Europe/Prague
+#sudo timedatectl set-timezone Europe/Vienna
 #adding keyboard layouts
 
 # Remove apt packages  
