@@ -24,6 +24,12 @@ sudo timedatectl set-timezone Europe/Bratislava
 #sudo timedatectl set-timezone Europe/Vienna
 #adding keyboard layouts
 
+# Configuring Theme settings.
+gsettings set org.cinnamon.theme name "Mint-Y-Red"
+gsettings set org.cinnamon.desktop.interface gtk-theme "Mint-Y-Red"
+gsettings set org.cinnamon.desktop.wm.preferences theme "Mint-Y-Red"
+gsettings set org.cinnamon.desktop.interface icon-theme "Mint-Y-Red"
+
 # Remove apt packages  
 sudo apt remove -y firefox
 sudo apt purge -y --autoremove libreoffice-common
