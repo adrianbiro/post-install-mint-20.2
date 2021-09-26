@@ -18,6 +18,10 @@ echo "This takes some time,do not panic if the progress bar seemingly"
 echo "does not move, it will."
 echo "#################################################################"
 sudo apt-get -y update
+# Changing timezone to Bratislava
+sudo timedatectl set-timezone Europe/Bratislava
+#adding keyboard layouts
+
 # Remove apt packages  
 sudo apt remove -y firefox
 sudo apt purge -y --autoremove libreoffice-common
