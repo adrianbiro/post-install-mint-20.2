@@ -18,12 +18,12 @@ echo "This takes some time,do not panic if the progress bar seemingly"
 echo "does not move, it will."
 echo "#################################################################"
 sudo apt-get -y update
-# Changing timezone to Bratislava. To find another use $ timedatectl list-timezones
+# Changing timezone to Bratislava. To find another use $ "timedatectl list-timezones |less" and search with "/" name_of_zone and quit with "q"
 sudo timedatectl set-timezone Europe/Bratislava
 #sudo timedatectl set-timezone Europe/Prague
 #sudo timedatectl set-timezone Europe/Vienna
-#adding keyboard layouts
-
+# Adding keyboard layouts to see another use $ "cat /usr/share/X11/xkb/rules/xorg.lst | less" fr for French, es for Spanish
+setxkbmap -option grp:switch,grp:alt_shift_toggle us,sk
 # Configuring Theme settings.
 gsettings set org.cinnamon.theme name "Mint-Y-Red"
 gsettings set org.cinnamon.desktop.interface gtk-theme "Mint-Y-Red"
