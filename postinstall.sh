@@ -75,7 +75,7 @@ echo "#################################################################"
 # Re-enabling Snap
 sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt install -y snapd
-sudo snap install -y authy
+sudo snap install authy
 # Flatpak packages 
 flatpak install -y com.calibre_ebook.calibre
 flatpak install -y org.mozilla.firefox
