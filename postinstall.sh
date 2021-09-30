@@ -82,6 +82,14 @@ flatpak install -y org.mozilla.firefox
 flatpak install -y org.libreoffice.LibreOffice
 flatpak install -y org.signal.Signal
 flatpak install -y bitwarden
+flatpak install -y com.tutanota.Tutanota
+flatpak install -y com.nextcloud.desktopclient.nextcloud
+flatpak install -y us.zoom.Zoom
+# UNOFFICIAL desktop client for ProtonMail
+#flatpak install -y com.github.vladimiry.ElectronMail
+# Proton apps for paid users
+flatpak install -y ch.protonmail.protonmail-bridge
+flatpak install -y ch.protonmail.protonmail-import-export-app
 
 echo "#################################################################"
 echo "#################### !!!Reboot now!!! ###########################"
