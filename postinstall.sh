@@ -55,14 +55,13 @@ echo "#################################################################"
 echo "################    Instalation almost Done   ###################"
 echo "#################################################################"
 # Re-enabling Snap
-sudo rm /etc/apt/preferences.d/nosnap.pref
-sudo apt install -y snapd
-sudo snap install authy
+#sudo rm /etc/apt/preferences.d/nosnap.pref
+#sudo apt install -y snapd
+#sudo snap install authy
 # Flatpak packages 
 flatpak install -y com.calibre_ebook.calibre
 #flatpak install -y org.mozilla.firefox
 flatpak install -y org.libreoffice.LibreOffice
-flatpak install -y org.signal.Signal
 flatpak install -y bitwarden
 #flatpak install -y com.tutanota.Tutanota
 #flatpak install -y com.nextcloud.desktopclient.nextcloud
