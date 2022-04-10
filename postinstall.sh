@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e 
+set -e 
 ########################################################################
 #
 # 	Author: Adrián Bíro
@@ -36,41 +36,24 @@ gsettings set org.cinnamon enabled-applets
 
 # Remove apt packages  
 #sudo apt remove -y firefox
-sudo apt purge -y --autoremove libreoffice-common
 echo "#################################################################"
 echo "###################    Packages removed   #######################"
 echo "#################################################################"
 # Install apt packages
 sudo apt install -y git
 sudo apt install -y meld
-sudo apt install -y virtualbox
 sudo apt install -y htop
 sudo apt install -y vim
 # Clipboard manager
 sudo apt install -y diodon
-# Window managers
-#sudo apt install -y dwm
-#
+
 echo "#################################################################"
 echo "################    Instalation almost Done   ###################"
 echo "#################################################################"
-# Re-enabling Snap
-#sudo rm /etc/apt/preferences.d/nosnap.pref
-#sudo apt install -y snapd
-#sudo snap install authy
-# Flatpak packages 
+
 flatpak install -y com.calibre_ebook.calibre
-#flatpak install -y org.mozilla.firefox
-flatpak install -y org.libreoffice.LibreOffice
 flatpak install -y bitwarden
-#flatpak install -y com.tutanota.Tutanota
-#flatpak install -y com.nextcloud.desktopclient.nextcloud
-#flatpak install -y us.zoom.Zoom
-# UNOFFICIAL desktop client for ProtonMail
-#flatpak install -y com.github.vladimiry.ElectronMail
-# Proton apps for paid users
-#flatpak install -y ch.protonmail.protonmail-bridge
-#flatpak install -y ch.protonmail.protonmail-import-export-app
+
 
 echo "#################################################################"
 echo "#################### !!!Reboot now!!! ###########################"
